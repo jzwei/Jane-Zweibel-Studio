@@ -1,0 +1,11 @@
+{
+  "name": "jmerle",
+  "version": "1.0.0",
+  "description": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm publish"
+  },
+  "author": "",
+  "license": "ISC"
+}
