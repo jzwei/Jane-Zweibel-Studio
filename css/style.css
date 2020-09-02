@@ -84,19 +84,22 @@ main {
 input#work,
 #contact,
 #about,
-#shop {
+#shop,
+#menu {
   display: none;
 }
 input#work,
 #contact,
 #about,
-#shop {
+#shop,
+#menu {
   display: none;
 }
 input#work,
 #contact,
 #about,
-#shop {
+#shop,
+#menu {
   display: none;
 }
 input:checked + label {

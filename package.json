@@ -4,8 +4,21 @@
   "description": "index.js",
   "main": "index.js",
   "scripts": {
-    "test": "npm publish"
+    "test": "npm publish",
+    "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzwei/jmerle.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jzwei/jmerle/issues"
+  },
+  "homepage": "https://github.com/jzwei/jmerle#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
