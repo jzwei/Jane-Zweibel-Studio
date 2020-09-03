@@ -1,7 +1,7 @@
 // server.js
 const express = require("express");
 const server = express();
-const port = 4000;
+const port = 8000;
 
 server.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
