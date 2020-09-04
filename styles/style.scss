@@ -1,5 +1,10 @@
 @import "./menu.scss";
 
+@font-face {
+  font-family: "script-font";
+  src: url(ILoveGlitter.ttf);
+}
+
 main,
 header,
 section,
@@ -7,7 +12,7 @@ aside,
 footer {
   margin: 0;
   padding: 20px;
-  border: 1px solid #000000;
+  // border: 1px solid #000000;
   /* color: #ffffff; */
 }
 
@@ -21,7 +26,7 @@ main {
 }
 
 .header {
-  background: #03a9f4;
+  // background: #03a9f4;
 }
 .jane {
   max-width: 95px;
@@ -32,13 +37,13 @@ main {
 }
 
 .sidebar {
-  border: 1px solid #000000;
-  background-color: red;
+  // border: 1px solid #000000;
+  // background-color: red;
   /* background: #673ab7; */
 }
 
 .footer {
-  border: 1px solid #000000;
+  // border: 1px solid #000000;
   /* background: #616161; */
 }
 
@@ -50,12 +55,12 @@ main {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 50%;
   max-width: 47%;
   padding: 0 4px;
 
+  // stuff for hover overlay
   .imgcontainer {
     margin-top: 8px;
     vertical-align: middle;
@@ -77,13 +82,14 @@ main {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: rgba(255, 255, 255, 0.25);
     &:hover {
       opacity: 1;
     }
     .imgtext {
-      color: white;
-      font-size: 20px;
+      color: black;
+      font-family: "script-font";
+      font-size: 50px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -91,6 +97,19 @@ main {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
+      &:link {
+        text-decoration: none;
+        color: black;
+      }
+      &:visited {
+        color: black;
+      }
+      &:hover {
+        font-style: italic;
+      }
+      &:active {
+        text-decoration: underline;
+      }
     }
   }
 }
