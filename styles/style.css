@@ -86,15 +86,23 @@ input:checked ~ .menu-content {
 }
 
 /* MENU END */
-.footer {
-  font-family: "Montserrat";
+.painting-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "text1 painting1" "text2 painting2" "text3 painting3" ". ." ". ." ". ." ". ." ". ." ". ." ". .";
+}
+
+div.paintingimage {
+  max-width: 100%;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
+  gap: 20px 20px;
   gap: 1px 1px;
   grid-template-areas: "contact contact contact" "instagram instagram instagram";
 }
@@ -124,6 +132,20 @@ footer {
   padding: 20px;
   font-family: "Montserrat";
   /* color: #ffffff; */
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  font-style: italic;
+}
+a:active {
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -212,6 +234,9 @@ main {
   width: 100%;
   height: auto;
 }
+.column .image .painting {
+  margin: 20px;
+}
 .column .overlay {
   position: absolute;
   top: 0;
@@ -238,19 +263,6 @@ main {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-.column .overlay .imgtext:link {
-  text-decoration: none;
-  color: black;
-}
-.column .overlay .imgtext:visited {
-  color: black;
-}
-.column .overlay .imgtext:hover {
-  font-style: italic;
-}
-.column .overlay .imgtext:active {
-  text-decoration: underline;
 }
 .column .overlay .imgsubtext {
   color: black;

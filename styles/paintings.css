@@ -1,0 +1,14 @@
+.painting-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  max-width: 50%;
+  grid-template-areas: "text1 painting1" "text2 painting2" "text3 painting3" ". ." ". ." ". ." ". ." ". ." ". ." ". .";
+}
+
+.paintingimage {
+  max-width: 100px;
+}
+
+/*# sourceMappingURL=paintings.css.map */

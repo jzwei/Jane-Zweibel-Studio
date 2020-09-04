@@ -1,4 +1,5 @@
 @import "./menu.scss";
+@import "./paintings.scss";
 @import "./footer.scss";
 
 @font-face {
@@ -22,6 +23,22 @@ footer {
   /* color: #ffffff; */
 }
 
+a{ //ALL LINKS
+  &:link {
+    text-decoration: none;
+    color: black;
+  }
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    font-style: italic;
+  }
+  &:active {
+    text-decoration: underline;
+  }
+}
+
 .wrapper {
   margin: auto;
   max-width: 75rem;
@@ -30,7 +47,6 @@ footer {
 main {
   /* background: #000000; */
 }
-
 
 .grid-container {
   display: grid;
@@ -130,6 +146,10 @@ main {
     display: block;
     width: 100%;
     height: auto;
+
+    .painting {
+      margin: 20px
+    }
   }
   .overlay {
     position: absolute;
@@ -156,19 +176,19 @@ main {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-      &:link {
-        text-decoration: none;
-        color: black;
-      }
-      &:visited {
-        color: black;
-      }
-      &:hover {
-        font-style: italic;
-      }
-      &:active {
-        text-decoration: underline;
-      }
+      // &:link {
+      //   text-decoration: none;
+      //   color: black;
+      // }
+      // &:visited {
+      //   color: black;
+      // }
+      // &:hover {
+      //   font-style: italic;
+      // }
+      // &:active {
+      //   text-decoration: underline;
+      // }
     }
     .imgsubtext {
       color: black;
@@ -184,6 +204,10 @@ main {
     }
   }
 }
+
+
+// PAINTINGS PAGE
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
