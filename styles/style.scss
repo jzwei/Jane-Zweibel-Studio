@@ -1,8 +1,13 @@
 @import "./menu.scss";
+@import "./footer.scss";
 
 @font-face {
   font-family: "script-font";
   src: url(ILoveGlitter.ttf);
+}
+@font-face {
+font-family: 'Montserrat', sans-serif;
+src:url(Montserrat-Regular.ttf);
 }
 
 main,
@@ -12,6 +17,7 @@ aside,
 footer {
   margin: 0;
   padding: 20px;
+  font-family: 'Montserrat';
   // border: 1px solid #000000;
   /* color: #ffffff; */
 }
@@ -25,15 +31,67 @@ main {
   /* background: #000000; */
 }
 
-.header {
-  // background: #03a9f4;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px 4px;
+  grid-template-areas:
+    "logo logo nav-links nav-links nav-links "
+    "headerline headerline nav-links nav-links nav-links ";
+  font-family: Montserrat;
+  // border: 1px solid #100000;
+  // background-color: green;
 }
-.jane {
-  max-width: 95px;
+
+.logo {
+  grid-area: logo;
+  max-width: 110px;
+  margin: 5px;
+  // background-color: red;
+  // border: 1px solid #100000;
 }
-.header-line {
-  font-style: italic;
-  color: grey;
+
+.headerline {
+  grid-area: headerline;
+  margin: 5px;
+  color: #6b6b6b
+  // background-color: blue;
+  // border: 1px solid #100000;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "link1 link2 link3"
+    "link1 link2 link3";
+  grid-area: nav-links;
+  justify-items: center;
+  align-items: center;
+  font-size: 1.5em;
+  // background-color: pink;
+  // border: 1px solid #100000;
+}
+
+.link2 {
+  grid-area: link2;
+  // border: 1px solid #100000;
+  // background-color: red;
+}
+
+.link3 {
+  grid-area: link3;
+  // border: 1px solid #100000;
+  // background-color: red;
+}
+
+.link1 { grid-area: link1;
+  // border: 1px solid #100000;
+  // background-color: red;
 }
 
 .sidebar {
@@ -59,6 +117,7 @@ main {
   flex: 50%;
   max-width: 47%;
   padding: 0 4px;
+  margin: 0 auto;
 
   // stuff for hover overlay
   .imgcontainer {
@@ -82,16 +141,16 @@ main {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.55);
     &:hover {
       opacity: 1;
     }
     .imgtext {
       color: black;
-      font-family: "script-font";
-      font-size: 50px;
+      font-family: "Montserrat";
+      font-size: 40px;
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -111,6 +170,18 @@ main {
         text-decoration: underline;
       }
     }
+    .imgsubtext {
+      color: black;
+      font-family: "Montserrat";
+      font-size: 20px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
   }
 }
 
@@ -118,7 +189,7 @@ main {
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 
