@@ -131,9 +131,10 @@ main {
 
 .column {
   flex: 50%;
-  max-width: 47%;
-  padding: 0 4px;
+  max-width: 48%;
+  padding: 0 2px 0 4px;
   margin: 0 auto;
+  align-content: space-evenly;
 
   // stuff for hover overlay
   .imgcontainer {
@@ -204,10 +205,6 @@ main {
     }
   }
 }
-
-
-// PAINTINGS PAGE
-
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {

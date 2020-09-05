@@ -91,11 +91,12 @@ input:checked ~ .menu-content {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
+  max-width: 50%;
   grid-template-areas: "text1 painting1" "text2 painting2" "text3 painting3" ". ." ". ." ". ." ". ." ". ." ". ." ". .";
 }
 
-div.paintingimage {
-  max-width: 100%;
+.paintingimage {
+  max-width: 500px;
 }
 
 .grid-container {
@@ -219,9 +220,10 @@ main {
 
 .column {
   flex: 50%;
-  max-width: 47%;
-  padding: 0 4px;
+  max-width: 48%;
+  padding: 0 2px 0 4px;
   margin: 0 auto;
+  align-content: space-evenly;
 }
 .column .imgcontainer {
   margin-top: 8px;
