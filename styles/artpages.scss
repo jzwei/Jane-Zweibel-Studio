@@ -1,0 +1,75 @@
+//ART PAGES***************
+.art-page-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "text1 image1"
+    "text2 image2"
+    "text3 image3"
+    "text4 image4"
+    "text5 image5"
+    "text6 image6"
+    "text7 image7"
+    "text8 image8";
+}
+.art-page-image {
+  max-width: 100%;
+}
+
+
+
+
+//PAINTING PAGE***********
+// .painting-grid-container {
+//   grid-template-areas:
+//     "text1 image1"
+//     "text2 image2"
+//     "text3 image3";
+// }
+
+//CERAMICS PAGE***********
+// .ceramics-grid-container {
+//   grid-template-areas:
+//     "text1 image1"
+//     "text2 image2";
+// }
+
+//PINS PAGE****************
+// .pins-grid-container {
+//   grid-template-areas:
+//     "text1 image1"
+//     "text2 image2"
+//     "text3 image3"
+//     "text4 image4"
+//     "text5 image5"
+//     "text6 image6";
+// }
+
+//ILLUSTRATIONS PAGE********
+// .illustrations-grid-container {
+//   grid-template-areas:
+//     "text1 image1"
+//     "text2 image2"
+//     "text3 image3"
+//     "text4 image4";
+// }
+
+//CRAZED ANIMALS PAGE********
+// .crazedanimals-grid-container {
+//   grid-template-areas:
+//     "text1 image1"
+//     "text2 image2"
+//     "text3 image3"
+//     "text4 image4";
+// }
+
+//LEATHER PAGE****************
+// .leather-grid-container {
+//   grid-template-areas:
+//     "text1 image1"
+//     "text2 image2"
+//     "text3 image3"
+//     "text4 image4";
+// }

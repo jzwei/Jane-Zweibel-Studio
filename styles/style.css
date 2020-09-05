@@ -86,17 +86,16 @@ input:checked ~ .menu-content {
 }
 
 /* MENU END */
-.painting-grid-container {
+.art-page-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
-  max-width: 50%;
-  grid-template-areas: "text1 painting1" "text2 painting2" "text3 painting3" ". ." ". ." ". ." ". ." ". ." ". ." ". .";
+  grid-template-areas: "text1 image1" "text2 image2" "text3 image3" "text4 image4" "text5 image5" "text6 image6";
 }
 
-.paintingimage {
-  max-width: 500px;
+.art-page-image {
+  max-width: 100%;
 }
 
 .grid-container {
