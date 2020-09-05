@@ -5,14 +5,22 @@
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas:
-    "text1 image1"
-    "text2 image2"
-    "text3 image3"
-    "text4 image4"
-    "text5 image5"
-    "text6 image6"
-    "text7 image7"
-    "text8 image8";
+    // "text1 image1"
+    // "text2 image2"
+    // "text3 image3"
+    // "text4 image4"
+    // "text5 image5"
+    // "text6 image6"
+    // "text7 image7"
+    // "text8 image8";
+    "text image"
+    "text image"
+    "text image"
+    "text image"
+    "text image"
+    "text image"
+    "text image"
+    "text image";
 }
 .art-page-image {
   max-width: 100%;
