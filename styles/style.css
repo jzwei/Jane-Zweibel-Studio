@@ -270,9 +270,9 @@ input:checked ~ .menu-content {
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("Montserrat.eot");
+  src: url("Montserrat-regular.eot");
   /* IE9 Compat Modes */
-  src: url("Montserrat.eot?#iefix") format("embedded-opentype"), url("Montserrat.woff2") format("woff2"), url("Montserrat.woff") format("woff"), url("Montserrat.ttf") format("truetype"), url("Montserrat.svg#svgFontName") format("svg");
+  src: url("Montserrat-regular.eot?#iefix") format("embedded-opentype"), url("Montserrat-regular.woff2") format("woff2"), url("Montserrat-regular.woff") format("woff"), url("Montserrat-regular.ttf") format("truetype"), url("Montserrat-regular.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 main,
