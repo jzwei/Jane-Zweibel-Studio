@@ -1,5 +1,6 @@
 @import "./menu.scss";
 @import "./artpages.scss";
+@import "./about.scss";
 @import "./footer.scss";
 // main.scss
 
@@ -54,9 +55,13 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
+  // grid-template-areas:
+  //   "logo logo nav-links nav-links nav-links nav-links"
+  //   "headerline headerline nav-links nav-links nav-links nav-links";
   grid-template-areas:
     "logo logo nav-links nav-links nav-links nav-links"
-    "headerline headerline nav-links nav-links nav-links nav-links";
+    "logo logo nav-links nav-links nav-links nav-links"
+    "headerline headerline headerline headerline headerline headerline";
   font-family: Montserrat;
   // border: 1px solid #100000;
   // background-color: green;
@@ -73,14 +78,15 @@ main {
 .headerline {
   grid-area: headerline;
   margin: 5px;
-  color: #6b6b6b
+  color: #6b6b6b;
+  // font-size: 2.5vw;
   // background-color: blue;
   // border: 1px solid #100000;
 }
 
 .nav-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: fit-content auto;
   grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas:
@@ -92,10 +98,10 @@ main {
   // background-color: pink;
   // border: 1px solid #100000;
 }
- .nav-link {
-display: flex;
-align-items: center;
-align-self: center;
+.nav-link {
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
  }
 
 .sidebar {
@@ -131,7 +137,7 @@ align-self: center;
     width: 100%;
     position: relative;
   }
-  .image {
+  .image { 
     display: block;
     width: 100%;
     height: auto;
@@ -157,7 +163,7 @@ align-self: center;
     .imgtext {
       color: black;
       font-family: "Montserrat";
-      font-size: 40px;
+      font-size: 20px;
       position: absolute;
       top: 45%;
       left: 50%;

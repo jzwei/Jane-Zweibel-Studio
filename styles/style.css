@@ -97,16 +97,166 @@ input:checked ~ .menu-content {
   max-width: 100%;
 }
 
+.blurb {
+  padding: 0 23px;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  padding-bottom: 56px;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 10px;
+}
+
+.hello {
+  font-size: 3em;
+  font-style: bold;
+  line-height: 1;
+}
+
+.about-img {
+  max-width: 300px;
+  margin: 4px 15px 0 10px;
+  float: left;
+  border-radius: 5%;
+}
+
+.fran-img {
+  float: right;
+  max-width: 200px;
+  padding-top: 5px;
+  padding: 9px 7px 0 9px;
+  border-radius: 50%;
+}
+
+.event-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+  max-width: 100%;
+}
+
+.about-event-img {
+  max-width: 100%;
+  margin: 4px 15px 0 10px;
+  justify-self: center;
+  border-radius: 1%;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+}
+
+.contact {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 20px;
+  border: solid 5px white;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1%;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
+  max-width: 700px;
+}
+
+.contact-top {
+  text-align: center;
+}
+
+.contact-img {
+  max-width: 150px;
+  margin: 10px;
+}
+
+.contact-text {
+  font-size: 3em;
+  padding: 10px 10px 0 10px;
+}
+
+#orders {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.contact-email a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.contact-instagram a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.input {
+  width: 100%;
+}
+
+.nameemailwrap {
+  display: grid;
+}
+
+.name-wrap {
+  width: 95%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.email-wrap {
+  width: 95%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-self: end;
+}
+
+.form-entry {
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.send {
+  text-align: right;
+}
+
+.sendbtn {
+  font-family: "Montserrat";
+  background-color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem lightgrey);
+}
+
+.sendbtn:hover {
+  font-style: italic;
+  filter: drop-shadow(0.1rem 0.1rem 0.05rem lightgrey);
+}
+
+/*ABOUT PAGE END*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
   gap: 1px 1px;
-  grid-template-areas: "contact contact contact" "instagram instagram instagram";
+  grid-template-areas: "footer-contact footer-contact footer-contact" "instagram instagram instagram";
 }
 
-.contact {
+.footer-contact {
   grid-area: contact;
 }
 
@@ -161,7 +311,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
-  grid-template-areas: "logo logo nav-links nav-links nav-links nav-links" "headerline headerline nav-links nav-links nav-links nav-links";
+  grid-template-areas: "logo logo nav-links nav-links nav-links nav-links" "logo logo nav-links nav-links nav-links nav-links" "headerline headerline headerline headerline headerline headerline";
   font-family: Montserrat;
 }
 
@@ -179,7 +329,7 @@ main {
 
 .nav-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: fit-content auto;
   grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas: "nav-link nav-link nav-link nav-link" "nav-link nav-link nav-link nav-link";
@@ -188,9 +338,9 @@ main {
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
   align-self: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .sidebar {
@@ -247,7 +397,7 @@ main {
 .column .overlay .imgtext {
   color: black;
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 20px;
   position: absolute;
   top: 45%;
   left: 50%;

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      jQuery.ajaxPrefilter(function (options) {
+        if (options.crossDomain && jQuery.support.cors) {
+          options.url = "https://cors-anywhere.herokuapp.com/" + options.url;
+        }
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#sidebar").load("sidebar.html");
+      });
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="shortcut icon"
+      href="./images/logo/favicon.gif"
+      type="image/x-icon"
+    />
+    <title>j. merle</title>
+  </head>
+
+  <body>
+  <!-- Main Content -->
+    <main class="main">
+    <!-- Header -->
+      <header id="header" class="header"></header>
+        <!-- Content -->
+
+        <div class="about-grid-container">
+          <div class="blurb">
+            <img class="about-img" src="./images/about/janeandfran.jpg">
+            <p class="bio"><span class="hello">Hello! </span>
+              My name is Jane Zweibel. I am a Philadelphia based artist and web developer with overflowing love for curly dogs, and making things. This website was created to showcase and share these affections.
+              <br/><br/>I am a Colorado native with a BA in International Business from the American University in Paris and an MS in Fashion Design from Drexel University. <img class="fran-img" src="./images/about/Fran.jpg">While I am not at home with my dog Frances, I'm at work (with my dog Frances) in the Philadelphia Naval Yard at Anthropologie Home's headquarters where I am the Production Manager for Home Textiles.
+              <br/><br/>I am an avid maker of many things including leathergoods, jewelry, ceramics, polymer clay figures, illustrations, stained glass, outerwear, evening wear, embroidery, complex excel spreadsheets-- and I illustrated, animated, and coded this entire website from scratch. The only thing I do not enjoy making is food!
+              <br/><br/>Please visit my shop (<a href="http://little-bones.com">little-bones.com</a>) and my personal website (<a href="http://janemz.com/index.html">janemz.com</a>) for more!
+            </p>
+          </div>
+          <div class="contact" id="contact-link">
+            <form class="gform" role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdNGErZBgAwFkBMGX0XYZ2D1WetJioPKHI-BZU_xxIXuFWyIg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="contact-top">
+                  <div class="contact-text">Contact me!</div>
+                  <hr class="line-break">
+                  <!-- <div class="contact-email">
+                    <a href="mailto:hello@little-bones.com">hello@little-bones.com</a></div> -->
+                  <div class="contact-instagram">
+                    <a href="https://www.instagram.com/janiejanez/?hl=en"><i class="fa fa-instagram" style="font-size:30px"></i></a></div>
+                  <!-- <img class="contact-img cursor" src="../images/logo/yellowdogsleeping.png"
+                  onmouseover="this.src='../images/logo/yellowdogsleepingwag.gif'" onmouseout="this.src='../images/logo/yellowdogsleeping.png'"/> -->
+                </div>
+                <hr class="line-break">
+                <div class="nameemailwrap">
+                  <div class="form-entry name-wrap">
+                    <label for="name" class="">Name</label>
+                    <div class="">
+                      <input type="text" class="input name" id="entry.1508233390" name="entry.1508233390" placeholder="First & Last Name" value="">
+                    </div>
+                  </div>
+                  <div class="form-entry email-wrap">
+                    <label for="email" class="">Email</label>
+                    <div class="">
+                      <input type="email" class="input email" id="entry.338293450" name="entry.338293450" placeholder="example@something.com" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-entry subject-wrap">
+                  <label for="subject" class="">Subject</label>
+                  <div class="">
+                    <input type="subject" class="input subject" id="entry.1973561110" name="entry.1973561110" placeholder="Subject" value="">
+                  </div>
+                </div>
+                <div class="form-entry message-wrap">
+                  <label for="message" class="">Message</label>
+                  <div class="">
+                    <textarea class="input message" rows="6" id="entry.408225715" name="entry.408225715" placeholder="Message..."></textarea>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="send">
+                    <input id="submit" name="submit" type="submit" value="Send!" class="sendbtn">
+                  </div>
+                </div>
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                <div class="">
+                  <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+                  <script type="text/javascript">
+                  $('#gform').on('submit', function(e) {
+                    $('#gform *').fadeOut(2000);
+                    $('#gform').prepend('Message Submitted!');
+                    });</script>
+                </div>
+              </form>
+          </div>
+        </div>
+      <!-- Footer -->
+      <footer id="footer" class="footer"></footer>
+    </main>
+  </body>
+</html>

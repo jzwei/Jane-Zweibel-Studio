@@ -5,9 +5,9 @@
   gap: 20px 20px;
   gap: 1px 1px;
   grid-template-areas:
-    "contact contact contact"
+    "footer-contact footer-contact footer-contact"
     "instagram instagram instagram";
 }
-.contact { grid-area: contact; }
+.footer-contact { grid-area: contact; }
 
 .instagram { grid-area: instagram; }
