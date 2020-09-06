@@ -2,7 +2,7 @@
 @import "./artpages.scss";
 @import "./footer.scss";
 // main.scss
- 
+
 @font-face {
   font-family: "script-font";
   src: url(ILoveGlitter.ttf);
@@ -51,12 +51,12 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
   grid-template-areas:
-    "logo logo nav-links nav-links nav-links "
-    "headerline headerline nav-links nav-links nav-links ";
+    "logo logo nav-links nav-links nav-links nav-links nav-links"
+    "headerline headerline nav-links nav-links nav-links nav-links";
   font-family: Montserrat;
   // border: 1px solid #100000;
   // background-color: green;
@@ -80,12 +80,11 @@ main {
 
 .nav-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas:
-    "link1 link2 link3"
-    "link1 link2 link3";
+    "link link link link";
   grid-area: nav-links;
   justify-items: center;
   align-items: center;
