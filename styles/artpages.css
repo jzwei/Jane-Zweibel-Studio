@@ -1,8 +1,7 @@
 .art-page-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1px 1px;
+  gap: 20px 5px;
   grid-template-areas: "text image" "text image" "text image" "text image" "text image" "text image" "text image" "text image";
 }
 
