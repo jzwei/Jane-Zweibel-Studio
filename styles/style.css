@@ -158,10 +158,10 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
-  grid-template-areas: "logo logo nav-links nav-links nav-links " "headerline headerline nav-links nav-links nav-links ";
+  grid-template-areas: "logo logo nav-links nav-links nav-links nav-links" "headerline headerline nav-links nav-links nav-links nav-links";
   font-family: Montserrat;
 }
 
@@ -179,26 +179,18 @@ main {
 
 .nav-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 1px 1px;
-  grid-template-areas: "link1 link2 link3" "link1 link2 link3";
+  grid-template-areas: "nav-link nav-link nav-link nav-link" "nav-link nav-link nav-link nav-link";
   grid-area: nav-links;
-  justify-items: center;
+  font-size: 2.5vw;
+}
+
+.nav-link {
+  display: flex;
   align-items: center;
-  font-size: 1.5em;
-}
-
-.link2 {
-  grid-area: link2;
-}
-
-.link3 {
-  grid-area: link3;
-}
-
-.link1 {
-  grid-area: link1;
+  align-self: center;
 }
 
 .sidebar {

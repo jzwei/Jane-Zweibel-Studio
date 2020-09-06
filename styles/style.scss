@@ -51,11 +51,11 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
   grid-template-areas:
-    "logo logo nav-links nav-links nav-links nav-links nav-links"
+    "logo logo nav-links nav-links nav-links nav-links"
     "headerline headerline nav-links nav-links nav-links nav-links";
   font-family: Montserrat;
   // border: 1px solid #100000;
@@ -84,31 +84,19 @@ main {
   grid-template-rows: 1fr;
   gap: 1px 1px;
   grid-template-areas:
-    "link link link link";
+    "nav-link nav-link nav-link nav-link"
+    "nav-link nav-link nav-link nav-link";
   grid-area: nav-links;
-  justify-items: center;
-  align-items: center;
-  font-size: 1.5em;
+  // place-items: center;
+  font-size: 2.5vw;
   // background-color: pink;
   // border: 1px solid #100000;
 }
-
-.link2 {
-  grid-area: link2;
-  // border: 1px solid #100000;
-  // background-color: red;
-}
-
-.link3 {
-  grid-area: link3;
-  // border: 1px solid #100000;
-  // background-color: red;
-}
-
-.link1 { grid-area: link1;
-  // border: 1px solid #100000;
-  // background-color: red;
-}
+ .nav-link {
+display: flex;
+align-items: center;
+align-self: center;
+ }
 
 .sidebar {
   // border: 1px solid #000000;
