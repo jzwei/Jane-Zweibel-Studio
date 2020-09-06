@@ -8,9 +8,20 @@
   font-family: "script-font";
   src: url(ILoveGlitter.ttf);
 }
+// @font-face {
+// font-family: 'Montserrat', sans-serif;
+// src:url(Montserrat-Regular.ttf);
+// }
+
+
 @font-face {
-font-family: 'Montserrat', sans-serif;
-src:url(Montserrat-Regular.ttf);
+  font-family: 'Montserrat';
+  src: url('Montserrat.eot'); /* IE9 Compat Modes */
+  src: url('Montserrat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Montserrat.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Montserrat.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 main,
@@ -137,7 +148,7 @@ main {
     width: 100%;
     position: relative;
   }
-  .image { 
+  .image {
     display: block;
     width: 100%;
     height: auto;

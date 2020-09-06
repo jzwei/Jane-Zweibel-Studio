@@ -269,8 +269,11 @@ input:checked ~ .menu-content {
   src: url(ILoveGlitter.ttf);
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url(Montserrat-Regular.ttf);
+  font-family: "Montserrat";
+  src: url("Montserrat.eot");
+  /* IE9 Compat Modes */
+  src: url("Montserrat.eot?#iefix") format("embedded-opentype"), url("Montserrat.woff2") format("woff2"), url("Montserrat.woff") format("woff"), url("Montserrat.ttf") format("truetype"), url("Montserrat.svg#svgFontName") format("svg");
+  /* Legacy iOS */
 }
 main,
 header,
