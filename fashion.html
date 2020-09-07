@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82821236-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-82821236-3');
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      jQuery.ajaxPrefilter(function (options) {
+        if (options.crossDomain && jQuery.support.cors) {
+          options.url = "https://cors-anywhere.herokuapp.com/" + options.url;
+        }
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#sidebar").load("sidebar.html");
+      });
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="shortcut icon"
+      href="./images/navigation/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Jane Zweibel Studio</title>
+  </head>
+  <body>
+  <!-- Main Content -->
+    <main class="main">
+    <!-- Header -->
+      <header id="header" class="header"></header>
+      <div class="fashion-flex-container fashion-wrapper">
+        <!-- Content -->
+        <div class="fashion-grid-container art-page-grid-container">
+          <div class="text">silk coutour dress with boning and tulle skirt</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="ct1" src="./images/art/dresses/ct1.jpg" />
+          </div>
+          <div class="text">form draped jersey evening gown</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="ev1" src="./images/art/dresses/ev1.jpg" />
+          </div>
+          <div class="text">reversible, quilted, double faced cashmere tailored wool coat</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="a1" src="./images/art/outerwear/a1.jpg" />
+          </div>
+          <div class="text">convertible collar, hidden button placket, quilted lining,tailored wool cocoon coat</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="b1" src="./images/art/outerwear/b1.jpg" />
+          </div>
+          <div class="text">reversible, double faced cashmere tailored wool coat</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="d1" src="./images/art/outerwear/d1.jpg" />
+          </div>
+          <div class="text">hidden button placket, silk lining, cashmere tailored wool</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="c1" src="./images/art/outerwear/c1.jpg" />
+          </div>
+          <div class="text">convertible collar to hood, leather buckle closures, silk lining, cashmere wool tailored coat</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="e1" src="./images/art/outerwear/e1.jpg" />
+          </div>
+          <div class="text">silk lining, cashmere wool tailored coat</div>
+          <div class="image art-page-image">
+            <img class="art-page-image" id="f1" src="./images/art/outerwear/f1.jpg" />
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer id="footer" class="footer"></footer>
+    </main>
+  </body>
+</html>
