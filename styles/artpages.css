@@ -2,11 +2,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 5px;
-  grid-template-areas: "text image" "text image" "text image" "text image" "text image" "text image" "text image" "text image";
+  grid-template-areas: "artworkprice artworkprice" "text image" "text image" "text image" "text image" "text image" "text image" "text image" "text image";
+}
+
+.artworkprice {
+  grid-area: artworkprice;
+  font-size: 18px;
+  margin-left: 28px;
+  margin-bottom: 25px;
+}
+
+.text {
+  text-align: right;
+  margin-right: 10px;
 }
 
 .art-page-image {
   max-width: 100%;
+}
+
+.sold {
+  font-weight: bolder;
+  color: red;
 }
 
 /*# sourceMappingURL=artpages.css.map */
