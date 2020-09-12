@@ -315,9 +315,9 @@ input:checked ~ .menu-content {
 }
 @font-face {
   font-family: "Montserrat-bold";
-  src: url("Montserrat-bold.eot");
+  src: url("montserrat-bold.eot");
   /* IE9 Compat Modes */
-  src: url("Montserrat-bold.eot?#iefix") format("embedded-opentype"), url("Montserrat-bold.woff2") format("woff2"), url("Montserrat-bold.woff") format("woff"), url("Montserrat-bold.ttf") format("truetype"), url("Montserrat-bold.svg#Montserrat-bold") format("svg");
+  src: url("montserrat-bold.eot?#iefix") format("embedded-opentype"), url("montserrat-bold.woff2") format("woff2"), url("montserrat-bold.woff") format("woff"), url("montserrat-bold.ttf") format("truetype"), url("montserrat-bold.svg#Montserrat-bold") format("svg");
   /* Legacy iOS */
 }
 main,
