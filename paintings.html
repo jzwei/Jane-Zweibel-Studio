@@ -33,7 +33,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
+    <script>$('[data-fancybox]').fancybox({
+      clickContent : function( current, event ) {
+        return current.type === 'image' ? 'zoom' : 'close';
+      }
+    });</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -55,7 +59,7 @@
       <div class="painting-flex-container painting-wrapper">
         <!-- Content -->
         <div class="painting-grid-container art-page-grid-container">
-          <div class="artworkprice">Original paintings for sale, <a href="about.html#contact-link" >contact</a> for price quote.</div>
+          <div class="artworkprice">original paintings for sale, <a class="quote-contact" href="about.html#contact-link" >contact</a> for a price quote</div>
           <div class="text"><span class="title">COTTON CANDY </span>| acrylic paint on canvas, 24x24"</div>
           <div class="image art-page-image">
             <!-- <img class="art-page-image" id="1_Cotton Candy_24x24_2020" src="./images/art/paintings/1_Cotton Candy_24x24_2020.jpg" /> -->
@@ -74,7 +78,7 @@
             <a href="./images/art/paintings/1_Summer Time_24x24_2020.jpg" data-fancybox="1_Summer Time_24x24_2020">
              <img class="art-page-image" src="./images/art/paintings/1_Summer Time_24x24_2020.jpg" alt="" /></a>
           </div>
-          <div class="text"><span class="title">WATER BALOON FIGHT </span>| acrylic paint on canvas, 24x24"</div>
+          <div class="text"><span class="title">WATER BALLOON FIGHT </span>| acrylic paint on canvas, 24x24"</div>
           <div class="image art-page-image">
             <!-- <img class="art-page-image" id="1_Water Balloon_24x24_2020" src="./images/art/paintings/1_Water Balloon_24x24_2020.jpg" /> -->
             <a href="./images/art/paintings/1_Water Balloon_24x24_2020.jpg" data-fancybox="1_Water Balloon_24x24_2020">
