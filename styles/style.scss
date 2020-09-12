@@ -23,7 +23,16 @@
        url('montserrat-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('montserrat-regular.svg#montserrat-regular') format('svg'); /* Legacy iOS */
 }
-
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url('Montserrat-bold.eot'); /* IE9 Compat Modes */
+  src: url('Montserrat-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Montserrat-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Montserrat-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat-bold.svg#Montserrat-bold') format('svg'); /* Legacy iOS */
+}
+ 
 main,
 header,
 section,
@@ -77,7 +86,7 @@ main {
   // border: 1px solid #100000;
   // background-color: green;
 }
- 
+
 .logo {
   grid-area: logo;
   max-width: 110px;

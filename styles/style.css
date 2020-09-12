@@ -98,6 +98,11 @@ input:checked ~ .menu-content {
   font-size: 18px;
   margin-left: 28px;
   margin-bottom: 25px;
+  font-family: Montserrat-bold;
+}
+
+.title {
+  font-family: Montserrat-bold;
 }
 
 .text {
@@ -112,6 +117,7 @@ input:checked ~ .menu-content {
 .sold {
   font-weight: bolder;
   color: red;
+  font-family: Montserrat-bold;
 }
 
 .blurb {
@@ -120,6 +126,7 @@ input:checked ~ .menu-content {
   display: block;
   margin: 0 auto;
   background-color: white;
+  padding-top: 25px;
   padding-bottom: 56px;
   border-radius: 1%;
   filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
@@ -304,6 +311,13 @@ input:checked ~ .menu-content {
   src: url("montserrat-regular.eot");
   /* IE9 Compat Modes */
   src: url("montserrat-regular.eot?#iefix") format("embedded-opentype"), url("montserrat-regular.woff2") format("woff2"), url("montserrat-regular.woff") format("woff"), url("montserrat-regular.ttf") format("truetype"), url("montserrat-regular.svg#montserrat-regular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("Montserrat-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("Montserrat-bold.eot?#iefix") format("embedded-opentype"), url("Montserrat-bold.woff2") format("woff2"), url("Montserrat-bold.woff") format("woff"), url("Montserrat-bold.ttf") format("truetype"), url("Montserrat-bold.svg#Montserrat-bold") format("svg");
   /* Legacy iOS */
 }
 main,

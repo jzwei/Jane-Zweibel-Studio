@@ -10,6 +10,11 @@
   font-size: 18px;
   margin-left: 28px;
   margin-bottom: 25px;
+  font-family: Montserrat-bold;
+}
+
+.title {
+  font-family: Montserrat-bold;
 }
 
 .text {
@@ -24,6 +29,7 @@
 .sold {
   font-weight: bolder;
   color: red;
+  font-family: Montserrat-bold;
 }
 
 /*# sourceMappingURL=artpages.css.map */
