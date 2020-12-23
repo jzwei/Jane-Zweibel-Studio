@@ -21,7 +21,8 @@
     "text image"
     "text image"
     "text image"
-    "text image";
+    "text image"
+    ;
 }
 .artworkprice {
   grid-area: artworkprice;
@@ -30,6 +31,11 @@
   margin-bottom: 25px;
   // font-family: Montserrat-bold;
   color: #6b6b6b;
+}
+
+span.year {
+  font-size: 4vw; 
+  color: black;
 }
 
 .quote-contact {
@@ -61,55 +67,7 @@
 }
 
 
-//PAINTING PAGE***********
-// .painting-grid-container {
-//   grid-template-areas:
-//     "text1 image1"
-//     "text2 image2"
-//     "text3 image3";
-// }
-
-//CERAMICS PAGE***********
-// .ceramics-grid-container {
-//   grid-template-areas:
-//     "text1 image1"
-//     "text2 image2";
-// }
-
-//PINS PAGE****************
-// .pins-grid-container {
-//   grid-template-areas:
-//     "text1 image1"
-//     "text2 image2"
-//     "text3 image3"
-//     "text4 image4"
-//     "text5 image5"
-//     "text6 image6";
-// }
-
-//ILLUSTRATIONS PAGE********
-// .illustrations-grid-container {
-//   grid-template-areas:
-//     "text1 image1"
-//     "text2 image2"
-//     "text3 image3"
-//     "text4 image4";
-// }
-
-//CRAZED ANIMALS PAGE********
-// .crazedanimals-grid-container {
-//   grid-template-areas:
-//     "text1 image1"
-//     "text2 image2"
-//     "text3 image3"
-//     "text4 image4";
-// }
-
-//LEATHER PAGE****************
-// .leather-grid-container {
-//   grid-template-areas:
-//     "text1 image1"
-//     "text2 image2"
-//     "text3 image3"
-//     "text4 image4";
-// }
+//PAINTING PAGES BY YEAR***********
+.fancybox-caption__body {
+  font-family: Montserrat;
+}

@@ -99,6 +99,11 @@ input:checked ~ .menu-content {
   color: #6b6b6b;
 }
 
+span.year {
+  font-size: 4vw;
+  color: black;
+}
+
 .quote-contact {
   color: #6b6b6b;
 }
@@ -120,6 +125,10 @@ input:checked ~ .menu-content {
   font-weight: bolder;
   color: red;
   font-family: Montserrat-bold;
+}
+
+.fancybox-caption__body {
+  font-family: Montserrat;
 }
 
 .blurb {
@@ -361,7 +370,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
-  grid-template-areas: "logo logo nav-links nav-links nav-links nav-links nav-links" "logo logo nav-links nav-links nav-links nav-links nav-links" "headerline headerline headerline headerline headerline headerline headerline";
+  grid-template-areas: "logo logo nav-links nav-links nav-links nav-links" "logo logo nav-links nav-links nav-links nav-links" "headerline headerline headerline headerline headerline headerline";
   font-family: Montserrat;
 }
 
@@ -444,6 +453,7 @@ ul li {
   padding: 5px;
   font-size: 1.5vw;
   flex: 1 100%;
+  color: dark-grey;
 }
 
 .sidebar {

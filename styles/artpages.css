@@ -12,6 +12,11 @@
   color: #6b6b6b;
 }
 
+span.year {
+  font-size: 4vw;
+  color: black;
+}
+
 .quote-contact {
   color: #6b6b6b;
 }
@@ -33,6 +38,10 @@
   font-weight: bolder;
   color: red;
   font-family: Montserrat-bold;
+}
+
+.fancybox-caption__body {
+  font-family: Montserrat;
 }
 
 /*# sourceMappingURL=artpages.css.map */

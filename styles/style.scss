@@ -79,9 +79,9 @@ main {
   //   "logo logo nav-links nav-links nav-links nav-links"
   //   "headerline headerline nav-links nav-links nav-links nav-links";
   grid-template-areas:
-    "logo logo nav-links nav-links nav-links nav-links nav-links"
-    "logo logo nav-links nav-links nav-links nav-links nav-links"
-    "headerline headerline headerline headerline headerline headerline headerline";
+    "logo logo nav-links nav-links nav-links nav-links"
+    "logo logo nav-links nav-links nav-links nav-links"
+    "headerline headerline headerline headerline headerline headerline";
   font-family: Montserrat;
   // border: 1px solid #100000;
   // background-color: green;
@@ -172,7 +172,7 @@ ul {
    opacity: 1;
    display: block;
    z-index: 1;
-
+   
 }
 
 ul li {
@@ -181,6 +181,7 @@ ul li {
   padding: 5px;
   font-size: 1.5vw;
   flex: 1 100%;
+  color: dark-grey;
 }
 
 // DROPDOWN STYLE END
