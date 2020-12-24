@@ -28,8 +28,10 @@
 }
 .bio {
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Spartan', sans-serif;
   margin: 0 10px;
+  line-height: 30px;
 }
 .hello {
   font-size: 3em;
@@ -90,6 +92,7 @@
 .contact-text {
   font-size: 3em;
   padding: 10px 10px 0 10px;
+  font-family: Bungee Shade;
 }
 
 #orders {

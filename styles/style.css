@@ -1,3 +1,4 @@
+@import "./fonts.css";
 /* MENU START */
 .menu-content {
   /* font-family: "Oswald", sans-serif; */
@@ -89,11 +90,11 @@ input:checked ~ .menu-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 5px;
-  grid-template-areas: "artworkprice artworkprice" "text image" "text image" "text image" "text image" "text image" "text image" "text image" "text image";
+  grid-template-areas: "artheader artheader" "text image" "text image" "text image" "text image" "text image" "text image" "text image" "text image";
 }
 
-.artworkprice {
-  grid-area: artworkprice;
+.artheader {
+  grid-area: artheader;
   margin-left: 28px;
   margin-bottom: 25px;
   color: #6b6b6b;
@@ -102,6 +103,13 @@ input:checked ~ .menu-content {
 span.year {
   font-size: 4vw;
   color: black;
+  font-family: Bungee Shade;
+}
+
+span.topic {
+  font-size: 4vw;
+  color: black;
+  font-family: Bungee Shade;
 }
 
 .quote-contact {
@@ -146,8 +154,9 @@ span.year {
 
 .bio {
   font-size: 1em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan", sans-serif;
   margin: 0 10px;
+  line-height: 30px;
 }
 
 .hello {
@@ -215,6 +224,7 @@ span.year {
 .contact-text {
   font-size: 3em;
   padding: 10px 10px 0 10px;
+  font-family: Bungee Shade;
 }
 
 #orders {
@@ -316,20 +326,6 @@ span.year {
 @font-face {
   font-family: "script-font";
   src: url(ILoveGlitter.ttf);
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("montserrat-regular.eot");
-  /* IE9 Compat Modes */
-  src: url("montserrat-regular.eot?#iefix") format("embedded-opentype"), url("montserrat-regular.woff2") format("woff2"), url("montserrat-regular.woff") format("woff"), url("montserrat-regular.ttf") format("truetype"), url("montserrat-regular.svg#montserrat-regular") format("svg");
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: "Montserrat-bold";
-  src: url("montserrat-bold.eot");
-  /* IE9 Compat Modes */
-  src: url("montserrat-bold.eot?#iefix") format("embedded-opentype"), url("montserrat-bold.woff2") format("woff2"), url("montserrat-bold.woff") format("woff"), url("montserrat-bold.ttf") format("truetype"), url("montserrat-bold.svg#Montserrat-bold") format("svg");
-  /* Legacy iOS */
 }
 main,
 header,
