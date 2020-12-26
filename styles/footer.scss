@@ -15,9 +15,16 @@
   max-width: 55px;
 }
 
-.instagram { grid-area: instagram; }
+.instagram {
+  grid-area: instagram;
+  font-size: 45px;
+}
 
 .instagram-drawing {
+  max-width: 50px;
+}
+
+.contact-drawing {
   max-width: 50px;
 }
 
