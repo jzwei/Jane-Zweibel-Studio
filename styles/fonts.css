@@ -19,13 +19,13 @@
 }
 @font-face {
   font-family: 'spartan';
-  src: url('spartan-regular.eot'); /* IE9 Compat Modes */
-  src: url('spartan-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('spartan-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('spartan-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('spartan-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('spartan-regular.svg#spartan-regular') format('svg'); /* Legacy iOS */
-} 
+  src: url('Spartan-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Spartan-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Spartan-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Spartan-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Spartan-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Spartan-Regular.svg#Spartan-Regular') format('svg'); /* Legacy iOS */
+}
 
 @font-face {
     font-family: 'Bungee Shade';
