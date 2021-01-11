@@ -516,6 +516,10 @@ ul li {
     grid-template-areas: "logo logo logo logo logo logo" "headerline headerline headerline headerline headerline headerline" "nav-links nav-links nav-links nav-links nav-links nav-links";
   }
 
+  .nav-links {
+    font-size: 105%;
+  }
+
   .headerline {
     text-align: center;
   }
