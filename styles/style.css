@@ -377,7 +377,6 @@ main {
 
 .logo {
   grid-area: logo;
-  max-width: 160px;
   margin: 5px;
 }
 
