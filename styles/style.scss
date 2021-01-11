@@ -68,7 +68,7 @@ main {
 .logo {
   grid-area: logo;
   // max-width: 160px;
-  margin: 5px;
+  // margin: 5px;
   // background-color: red;
   // border: 1px solid #100000;
   // transform: scale(-1, 1);
@@ -97,7 +97,7 @@ main {
     "nav-link nav-link nav-link nav-link";
   grid-area: nav-links;
   // place-items: center;
-  font-size: 2vw;
+  font-size: 125%;
   // background-color: pink;
   // border: 1px solid #100000;
 }
@@ -160,7 +160,7 @@ ul li {
   clear: both;
   width: 100%;
   padding: 5px;
-  font-size: 1.5vw;
+  font-size: .7em;
   flex: 1 100%;
   color: dark-grey;
 }
@@ -275,17 +275,29 @@ ul li {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 640px) {
+  .grid-container {
+    grid-template-areas:
+      "logo logo logo logo logo logo"
+      "headerline headerline headerline headerline headerline headerline"
+      "nav-links nav-links nav-links nav-links nav-links nav-links";
+  }
+  .nav-links{
+    // font-size: 4vw;
+  }
+  .headerline {
+    text-align: center;
+  }
   .column {
     // flex: 100%;
     // max-width: 100%;
-
-      .overlay {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.55);
-        position: absolute;
-        top: 67%;
-        height: 20%;
-        width: 100%;
-      }
   }
+    .overlay {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.55);
+      position: absolute;
+      top: 67%;
+      height: 20%;
+      width: 100%;
+    }
+
 }

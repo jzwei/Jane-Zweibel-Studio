@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 //ABOUT PAGE***************
-.about {
-}
-
 .blurb {
-  // grid-template-columns: 0.1fr 1fr;
   padding: 0 23px;
   max-width: 800px;
   display: block;
@@ -26,45 +11,22 @@
   filter: drop-shadow(0.3rem 0.5rem 0.3rem lightgrey);
   margin-bottom: 20px;
 }
+
 .bio {
+  // grid-area: bio;
+  text-align: left;
   font-size: 1em;
   // font-family: 'Montserrat', sans-serif;
   font-family: 'Spartan', sans-serif;
   margin: 0 10px;
   line-height: 30px;
 }
-.hello {
-  font-size: 3em;
-  font-style: bold;
-  line-height: 1;
-}
+
 .about-img {
   max-width: 300px;
   margin: 4px 15px 2px 10px;
   float: left;
   border-radius: 5%;
-}
-.fran-img {
-  float: right;
-  max-width: 200px;
-  padding-top: 5px;
-  padding: 9px 7px 0 9px;
-  border-radius: 50%;
-}
-
-.event-image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-  grid-gap: 10px;
-  max-width: 100%;
-}
-
-.about-event-img {
-  max-width: 100%;
-  margin: 4px 15px 0 10px;
-  justify-self: center;
-  border-radius: 1%;
 }
 
 .contact-wrapper {
@@ -152,3 +114,10 @@
   filter: drop-shadow(0.1rem 0.1rem 0.05rem lightgrey);
 }
 /*ABOUT PAGE END*/
+
+@media screen and (max-width: 640px) {
+  .bio {
+    display: inline-block;
+    padding-top: 15px;
+  }
+}

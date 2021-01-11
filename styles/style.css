@@ -153,16 +153,11 @@ span.topic {
 }
 
 .bio {
+  text-align: left;
   font-size: 1em;
   font-family: "Spartan", sans-serif;
   margin: 0 10px;
   line-height: 30px;
-}
-
-.hello {
-  font-size: 3em;
-  font-style: bold;
-  line-height: 1;
 }
 
 .about-img {
@@ -170,29 +165,6 @@ span.topic {
   margin: 4px 15px 2px 10px;
   float: left;
   border-radius: 5%;
-}
-
-.fran-img {
-  float: right;
-  max-width: 200px;
-  padding-top: 5px;
-  padding: 9px 7px 0 9px;
-  border-radius: 50%;
-}
-
-.event-image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-  grid-gap: 10px;
-  max-width: 100%;
-}
-
-.about-event-img {
-  max-width: 100%;
-  margin: 4px 15px 0 10px;
-  justify-self: center;
-  border-radius: 1%;
 }
 
 .contact-wrapper {
@@ -292,6 +264,12 @@ span.topic {
 }
 
 /*ABOUT PAGE END*/
+@media screen and (max-width: 640px) {
+  .bio {
+    display: inline-block;
+    padding-top: 15px;
+  }
+}
 .footer-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -377,7 +355,6 @@ main {
 
 .logo {
   grid-area: logo;
-  margin: 5px;
 }
 
 .headerline {
@@ -393,7 +370,7 @@ main {
   gap: 1px 1px;
   grid-template-areas: "nav-link nav-link nav-link nav-link" "nav-link nav-link nav-link nav-link";
   grid-area: nav-links;
-  font-size: 2vw;
+  font-size: 125%;
 }
 
 .nav-link {
@@ -451,7 +428,7 @@ ul li {
   clear: both;
   width: 100%;
   padding: 5px;
-  font-size: 1.5vw;
+  font-size: 0.7em;
   flex: 1 100%;
   color: dark-grey;
 }
@@ -535,7 +512,15 @@ ul li {
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 640px) {
-  .column .overlay {
+  .grid-container {
+    grid-template-areas: "logo logo logo logo logo logo" "headerline headerline headerline headerline headerline headerline" "nav-links nav-links nav-links nav-links nav-links nav-links";
+  }
+
+  .headerline {
+    text-align: center;
+  }
+
+  .overlay {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.55);
     position: absolute;

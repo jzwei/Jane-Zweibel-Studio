@@ -12,16 +12,11 @@
 }
 
 .bio {
+  text-align: left;
   font-size: 1em;
   font-family: "Spartan", sans-serif;
   margin: 0 10px;
   line-height: 30px;
-}
-
-.hello {
-  font-size: 3em;
-  font-style: bold;
-  line-height: 1;
 }
 
 .about-img {
@@ -29,29 +24,6 @@
   margin: 4px 15px 2px 10px;
   float: left;
   border-radius: 5%;
-}
-
-.fran-img {
-  float: right;
-  max-width: 200px;
-  padding-top: 5px;
-  padding: 9px 7px 0 9px;
-  border-radius: 50%;
-}
-
-.event-image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-  grid-gap: 10px;
-  max-width: 100%;
-}
-
-.about-event-img {
-  max-width: 100%;
-  margin: 4px 15px 0 10px;
-  justify-self: center;
-  border-radius: 1%;
 }
 
 .contact-wrapper {
@@ -151,5 +123,11 @@
 }
 
 /*ABOUT PAGE END*/
+@media screen and (max-width: 640px) {
+  .bio {
+    display: inline-block;
+    padding-top: 15px;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */
