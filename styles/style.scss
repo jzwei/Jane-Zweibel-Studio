@@ -40,8 +40,11 @@ a{ //ALL LINKS
 }
 
 .wrapper {
-  margin: auto;
+  // margin: auto;
+}
+.content {
   max-width: 75rem;
+  margin: auto;
 }
 
 main {
@@ -166,20 +169,6 @@ ul li {
 }
 
 // DROPDOWN STYLE END
-
-
-
-.sidebar {
-  // border: 1px solid #000000;
-  // background-color: red;
-  /* background: #673ab7; */
-}
-
-.footer {
-  // border: 1px solid #000000;
-  /* background: #616161; */
-}
-
 
 /************** IMAGE GALLERY START */
 .row {

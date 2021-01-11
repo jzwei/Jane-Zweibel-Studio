@@ -335,9 +335,9 @@ a:active {
   text-decoration: underline;
 }
 
-.wrapper {
-  margin: auto;
+.content {
   max-width: 75rem;
+  margin: auto;
 }
 
 main {
@@ -431,14 +431,6 @@ ul li {
   font-size: 0.7em;
   flex: 1 100%;
   color: dark-grey;
-}
-
-.sidebar {
-  /* background: #673ab7; */
-}
-
-.footer {
-  /* background: #616161; */
 }
 
 /************** IMAGE GALLERY START */
