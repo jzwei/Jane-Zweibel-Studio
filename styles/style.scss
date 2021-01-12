@@ -90,6 +90,10 @@ main {
   // border: 1px solid #100000;
 }
 
+.headerline p {
+  margin-top: 0px;
+}
+
 .nav-links {
   display: grid;
   grid-template-columns: fit-content auto;
