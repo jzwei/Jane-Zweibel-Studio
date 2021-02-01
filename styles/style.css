@@ -286,7 +286,7 @@ span.topic {
 .footer-flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 50px;
   max-width: 1100px;
   margin: 0 auto;
@@ -388,7 +388,7 @@ main {
   grid-template-columns: fit-content auto;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  grid-template-areas: "nav-link nav-link nav-link nav-link nav-link" "nav-link nav-link nav-link nav-link nav-link";
+  grid-template-areas: "... ... ... ... ..." "... ... ... ... ...";
   grid-area: nav-links;
   font-size: 125%;
 }
@@ -557,6 +557,15 @@ ul li {
 
   .headerline {
     text-align: center;
+  }
+
+  .hero-image {
+    background-position: -118px -44px;
+    height: 320px;
+  }
+
+  .flex-container {
+    padding: 5px;
   }
 
   .overlay {

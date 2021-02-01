@@ -126,21 +126,25 @@ main {
   display: grid;
   grid-template-columns: fit-content auto;
   grid-template-rows: 1fr;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas:
-    "nav-link nav-link nav-link nav-link nav-link"
-    "nav-link nav-link nav-link nav-link nav-link";
+    // "nav-link nav-link nav-link nav-link nav-link"
+    // "nav-link nav-link nav-link nav-link nav-link";
+    "... ... ... ... ..."
+    "... ... ... ... ...";
   grid-area: nav-links;
   // place-items: center;
   font-size: 125%;
   // background-color: pink;
   // border: 1px solid #100000;
 }
-.nav-link { 
+.nav-link {
   // align-self: center;
   margin: 0 auto;
   text-align: right;
   // justify-self: end;
+  // grid-area: nav-link;
  }
 
 
@@ -343,8 +347,16 @@ ul li {
   .headerline {
     text-align: center;
   }
+  .hero-image {
+    background-position: -118px -44px;
+    height: 320px;
+}
+  .flex-container {
+    padding: 5px;
+  }
+
   .column {
-    // flex: 100%;
+    // flex: 47%;
     // max-width: 100%;
   }
     .overlay {
