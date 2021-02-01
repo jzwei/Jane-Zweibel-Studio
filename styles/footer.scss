@@ -1,39 +1,57 @@
-.footer-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  // gap: 20px 20px;
-  gap: 1px 1px;
-  align-items: center;
-  grid-template-areas:
-    "footer-contact franoutline"
-    "instagram franoutline";
-}
+// .footer-grid-container {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-rows: 1fr 1fr;
+//   // gap: 20px 20px;
+//   gap: 1px 1px;
+//   align-items: center;
+//   grid-template-areas:
+//     "footer-contact franoutline"
+//     "instagram franoutline";
+// }
 
-.footer-contact {
-  grid-area: footer-contact;
-  max-width: 55px;
-}
-
-.instagram {
-  grid-area: instagram;
-  font-size: 45px;
-}
+// .footer-contact {
+//   // grid-area: footer-contact;
+//   max-width: 55px;
+// }
+//
+// .instagram {
+//   // grid-area: instagram;
+//   font-size: 45px;
+// }
+//
 
 .instagram-drawing {
   max-width: 50px;
 }
-
+//
 .contact-drawing {
   max-width: 50px;
 }
-
-.franoutline {
-    grid-area: franoutline;
-}
-
+//
+// .franoutline {
+//     // grid-area: franoutline;
+// }
+//
 .franoutline-svg {
     max-width: 115px;
     // transform: rotate(24deg);
     float: right;
   }
+
+
+
+// ********footer flex container
+.footer-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.footer-flex-container > div {
+  flex-grow: 1;
+}
