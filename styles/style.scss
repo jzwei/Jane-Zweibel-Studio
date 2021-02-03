@@ -234,8 +234,11 @@ ul li {
   height: 100%;
   margin-bottom: 2%;
   // padding: 10px;
+  // line-height: 150%;
 }
-
+p.flex-item {
+  line-height: 165%;
+}
 .flex-item:nth-child(3n) {
   width: 100%;
 }

@@ -280,17 +280,15 @@ span.topic {
 
 .franoutline-svg {
   max-width: 115px;
-  float: right;
 }
 
 .footer-flex-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 50px;
-  max-width: 1100px;
   margin: 0 auto;
   height: 100px;
+  width: 100%;
 }
 
 .footer-flex-container > div {
@@ -470,6 +468,10 @@ ul li {
   width: 48%;
   height: 100%;
   margin-bottom: 2%;
+}
+
+p.flex-item {
+  line-height: 165%;
 }
 
 .flex-item:nth-child(3n) {
