@@ -296,10 +296,12 @@ span.topic {
 
 .instagram-icon {
   width: 50px;
+  padding: 10px;
 }
 
 .mail-icon {
-  width: 67px;
+  width: 65px;
+  padding: 10px;
 }
 
 @font-face {
