@@ -1,26 +1,33 @@
-.instagram-drawing {
-  max-width: 50px;
-}
-
-.contact-drawing {
-  max-width: 50px;
-}
-
-.franoutline-svg {
-  max-width: 115px;
-}
-
-.footer-flex-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
-  margin: 0 auto;
-  height: 100px;
+.footer_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". info info .";
   width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
 }
 
-.footer-flex-container > div {
-  flex-grow: 1;
+.tiger_img img {
+  max-width: 250px;
+  justify-self: center;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagram-icon {
+  width: 50px;
+}
+
+.mail-icon {
+  width: 67px;
 }
 
 /*# sourceMappingURL=footer.css.map */
