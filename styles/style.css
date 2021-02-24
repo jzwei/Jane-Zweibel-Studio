@@ -292,6 +292,7 @@ span.topic {
   grid-area: info;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .instagram-icon {
