@@ -329,6 +329,8 @@ aside,
 footer {
   margin: 0;
   font-family: "Montserrat";
+  width: 100%;
+  overflow: hidden;
 }
 
 a:link {
