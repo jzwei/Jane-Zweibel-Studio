@@ -359,6 +359,7 @@ a:active {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  z-index: 1000;
 }
 
 /* Place text in the middle of the image */
