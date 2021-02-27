@@ -299,6 +299,10 @@ span.topic {
   align-self: center;
 }
 
+.hidden_desktop {
+  display: none;
+}
+
 .instagram-icon {
   width: 50px;
   padding: 10px;
@@ -622,11 +626,12 @@ p.flex-item {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 250px;
   }
 
   .info {
     grid-area: 1/1/2/4;
-    align-self: baseline;
+    align-self: start;
   }
 
   .footer_img_left {
@@ -635,6 +640,19 @@ p.flex-item {
 
   .footer_img_right {
     grid-area: 1/2/2/3;
+  }
+
+  .footer_img_right img {
+    width: 150px;
+  }
+
+  .hidden_mobile {
+    display: none;
+  }
+
+  .hidden_desktop {
+    display: block;
+    padding-top: 62px;
   }
 }
 

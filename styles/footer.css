@@ -27,6 +27,10 @@
   align-self: center;
 }
 
+.hidden_desktop {
+  display: none;
+}
+
 .instagram-icon {
   width: 50px;
   padding: 10px;
