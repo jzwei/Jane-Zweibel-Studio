@@ -1,3 +1,7 @@
+#footer {
+  padding: 20px;
+}
+
 .footer_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6,12 +10,11 @@
   grid-template-areas:
     ". info info .";
   width: 100%;
-  height: 400px;
+  height: 350px;
   // background-color: red;
   align-items: baseline;
   justify-items: center;
   justify-content: space-between;
-  padding-bottom: 15px;
 }
 
 .tiger_img img {

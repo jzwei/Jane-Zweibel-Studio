@@ -270,6 +270,10 @@ span.topic {
     padding-top: 15px;
   }
 }
+#footer {
+  padding: 20px;
+}
+
 .footer_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -277,11 +281,10 @@ span.topic {
   gap: 0px 0px;
   grid-template-areas: ". info info .";
   width: 100%;
-  height: 400px;
+  height: 350px;
   align-items: baseline;
   justify-items: center;
   justify-content: space-between;
-  padding-bottom: 15px;
 }
 
 .tiger_img img {
@@ -324,9 +327,7 @@ section,
 aside,
 footer {
   margin: 0;
-  padding: 20px;
   font-family: "Montserrat";
-  /* color: #ffffff; */
 }
 
 a:link {
@@ -376,7 +377,7 @@ main {
   /* background: #000000; */
 }
 
-.grid-container {
+.header-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -384,6 +385,7 @@ main {
   grid-template-areas: "logo logo nav-links nav-links nav-links nav-links" "logo logo nav-links nav-links nav-links nav-links" "headerline headerline headerline headerline headerline headerline";
   font-family: Montserrat;
   align-items: center;
+  padding: 25px;
 }
 
 .logo {
@@ -568,7 +570,7 @@ p.flex-item {
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 640px) {
-  .grid-container {
+  .header-grid-container {
     grid-template-areas: "logo logo logo logo logo logo" "headerline headerline headerline headerline headerline headerline" "nav-links nav-links nav-links nav-links nav-links nav-links";
   }
 
@@ -588,7 +590,7 @@ p.flex-item {
   }
 
   .flex-container {
-    padding: 5px;
+    padding: 25px;
   }
 
   .column .overlay {
@@ -605,6 +607,10 @@ p.flex-item {
 
   .flex-item {
     width: 100%;
+  }
+
+  .about {
+    margin: 30px;
   }
 }
 
