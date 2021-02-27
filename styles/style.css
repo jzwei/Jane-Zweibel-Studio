@@ -277,15 +277,15 @@ span.topic {
   gap: 0px 0px;
   grid-template-areas: ". info info .";
   width: 100%;
-  height: 200px;
-  align-items: center;
+  height: 400px;
+  align-items: baseline;
   justify-items: center;
   justify-content: space-between;
+  padding-bottom: 15px;
 }
 
 .tiger_img img {
   max-width: 250px;
-  justify-self: center;
 }
 
 .info {
