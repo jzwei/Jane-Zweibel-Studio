@@ -287,7 +287,7 @@ span.topic {
   justify-content: space-between;
 }
 
-.tiger_img img {
+.footer_img img {
   max-width: 250px;
 }
 
@@ -296,6 +296,7 @@ span.topic {
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  align-self: center;
 }
 
 .instagram-icon {
@@ -611,6 +612,26 @@ p.flex-item {
 
   .about {
     margin: 30px;
+  }
+
+  .footer_container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .info {
+    grid-area: 1/1/2/4;
+    align-self: baseline;
+  }
+
+  .footer_img_left {
+    display: none;
+  }
+
+  .footer_img_right {
+    grid-area: 1/2/2/3;
   }
 }
 

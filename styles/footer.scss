@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.tiger_img img {
+.footer_img img {
   max-width: 250px;
   // justify-self: center;
 }
@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  align-self: center;
 }
 
 .instagram-icon {
