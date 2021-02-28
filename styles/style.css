@@ -575,13 +575,6 @@ p.flex-item {
     text-align: center;
   }
 
-  .hero-image {
-    background-position: -37px -18px;
-    height: 320px;
-    background-attachment: scroll;
-    background-size: 700px;
-  }
-
   .flex-container {
     padding: 25px;
   }
