@@ -575,10 +575,6 @@ p.flex-item {
     text-align: center;
   }
 
-  .hero-image {
-    background-attachment: initial;
-  }
-
   .flex-container {
     padding: 25px;
   }
