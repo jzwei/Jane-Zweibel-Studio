@@ -450,18 +450,13 @@ ul li {
 
 /* The hero image */
 .hero-image {
-  background-image: url("../images/about/painting5.jpg");
+  background-image: url("/../images/about/painting5.jpg");
   /* Set a specific height */
   height: 500px;
   width: 100%;
   /* Position and center the image to scale nicely on all screens */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .hello {
