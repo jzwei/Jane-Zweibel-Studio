@@ -494,9 +494,17 @@ p.flex-item {
   padding: 0 4px;
 }
 
-.column {
+.illustration-column {
   flex: 33%;
   max-width: 32%;
+  padding: 0 2px 0 4px;
+  margin: 0 auto;
+  align-content: space-evenly;
+}
+
+.column {
+  flex: 50%;
+  max-width: 48%;
   padding: 0 2px 0 4px;
   margin: 0 auto;
   align-content: space-evenly;
