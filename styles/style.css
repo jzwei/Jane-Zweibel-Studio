@@ -586,6 +586,10 @@ p.flex-item {
     padding: 25px;
   }
 
+  .illustration-column {
+    padding: 0 2px 0 2px;
+  }
+
   .column .overlay {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.55);

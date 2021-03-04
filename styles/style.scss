@@ -253,8 +253,8 @@ p.flex-item {
   padding: 0 2px 0 4px;
   margin: 0 auto;
   align-content: space-evenly;
-
 }
+
 .column {
   flex: 50%;
   max-width: 48%;
@@ -364,6 +364,12 @@ p.flex-item {
   }
   .flex-container {
     padding: 25px;
+  }
+
+  .illustration-column {
+    // flex: 50%;
+    // max-width: 48%;
+    padding: 0 2px 0 2px;
   }
 
   .column {
