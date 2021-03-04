@@ -495,8 +495,8 @@ p.flex-item {
 }
 
 .column {
-  flex: 50%;
-  max-width: 48%;
+  flex: 33%;
+  max-width: 32%;
   padding: 0 2px 0 4px;
   margin: 0 auto;
   align-content: space-evenly;
