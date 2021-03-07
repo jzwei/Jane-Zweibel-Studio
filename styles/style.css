@@ -107,7 +107,7 @@ span.year {
 }
 
 span.topic {
-  font-size: 4vw;
+  font-size: 6vw;
   color: black;
   font-family: Bungee Shade;
 }
@@ -573,11 +573,10 @@ p.flex-item {
 /* ---- isotope button ---- */
 .button {
   display: inline-block;
-  padding: 10px 18px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   border: none;
   border-radius: 7px;
-  font-size: 16px;
+  font-size: 15px;
   text-shadow: 0 1px white;
   cursor: pointer;
 }
@@ -603,6 +602,10 @@ p.flex-item {
 }
 
 /* ---- button-group ---- */
+.button-group {
+  text-align: center;
+}
+
 .button-group:after {
   content: "";
   display: block;
@@ -610,7 +613,6 @@ p.flex-item {
 }
 
 .button-group .button {
-  float: left;
   border-radius: 0;
   margin-left: 0;
   margin-right: 1px;
@@ -636,6 +638,7 @@ p.flex-item {
 /* columns, percentage width */
 .grid {
   margin: 0 auto;
+  width: 100%;
 }
 
 /* clear fix */
