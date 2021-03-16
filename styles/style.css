@@ -185,10 +185,6 @@ span.topic {
   max-width: 700px;
 }
 
-.contact-top {
-  text-align: center;
-}
-
 .contact-img {
   max-width: 150px;
   margin: 10px;
@@ -198,6 +194,7 @@ span.topic {
   font-size: 3em;
   padding: 10px 10px 0 10px;
   font-family: Bungee Shade;
+  text-align: center;
 }
 
 #orders {
@@ -207,13 +204,24 @@ span.topic {
   padding-bottom: 20px;
 }
 
-.contact-email a {
+.email_number {
+  padding: 25px 0 25px 0;
+}
+
+.contact-email, .contact-number {
+  text-align: left;
+  font-family: Montserrat-bold;
+}
+.contact-email a, .contact-number a {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   padding: 5px;
   text-decoration: none;
 }
 
+.contact-instagram {
+  text-align: center;
+}
 .contact-instagram a {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
