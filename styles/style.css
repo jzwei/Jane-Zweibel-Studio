@@ -499,7 +499,7 @@ p.flex-item {
   line-height: 165%;
 }
 
-.flex-item:nth-child(3n) {
+.flex-item-pattern:nth-child(3n) {
   width: 100%;
 }
 
