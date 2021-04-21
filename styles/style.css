@@ -367,7 +367,7 @@ main {
 
 .header-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px 4px;
   grid-template-areas: "logo logo nav-links nav-links nav-links nav-links" "logo logo nav-links nav-links nav-links nav-links" "headerline headerline headerline headerline headerline headerline";
@@ -378,6 +378,7 @@ main {
 
 .logo {
   grid-area: logo;
+  text-align: center;
 }
 
 .headerline {
