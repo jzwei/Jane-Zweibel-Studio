@@ -438,7 +438,7 @@ p.flex-item {
 .linktree-box {
   background-color: white;
   max-width: 80%;
-  height: 150px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -456,8 +456,19 @@ p.flex-item {
   justify-content: space-between;
   width: 84%;
   margin: 0 auto;
-  height: 106px;
+  height: 261px;
 }
+
+.linktree-photo img {
+  border-radius: 50%;
+  width: 100px;
+
+}
+
+.linktree-insta-name {
+  margin-bottom: 15px;
+}
+
  .linktree-item {
    background-color: #1f8c87;
    width: 100%;
