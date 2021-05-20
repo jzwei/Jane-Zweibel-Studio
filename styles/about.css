@@ -130,6 +130,18 @@
   filter: drop-shadow(0.1rem 0.1rem 0.05rem lightgrey);
 }
 
+.findme {
+  text-align: center;
+}
+
+.etsylogo {
+  max-width: 50px;
+}
+
+.instagramlogo {
+  max-width: 50px;
+}
+
 /*ABOUT PAGE END*/
 @media screen and (max-width: 640px) {
   .bio {

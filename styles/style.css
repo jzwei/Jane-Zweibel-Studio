@@ -272,6 +272,18 @@ span.topic {
   filter: drop-shadow(0.1rem 0.1rem 0.05rem lightgrey);
 }
 
+.findme {
+  text-align: center;
+}
+
+.etsylogo {
+  max-width: 50px;
+}
+
+.instagramlogo {
+  max-width: 50px;
+}
+
 /*ABOUT PAGE END*/
 @media screen and (max-width: 640px) {
   .bio {
@@ -675,6 +687,43 @@ p.flex-item {
 
 .grid-item--height2 {
   height: 200px;
+}
+
+#linktree-container {
+  background-image: url("/../images/art/paintings/2021/blockparty.jpg");
+  padding: 100px 40px;
+}
+
+.linktree-box {
+  background-color: white;
+  max-width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: drop-shadow(0.3rem 0.5rem 0.3rem black);
+}
+
+.linktree {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 84%;
+  margin: 0 auto;
+  height: 106px;
+}
+
+.linktree-item {
+  background-color: #1f8c87;
+  width: 100%;
+  text-align: center;
+  height: 25px;
+}
+.linktree-item a {
+  color: white;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

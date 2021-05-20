@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82821236-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-82821236-3');
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      jQuery.ajaxPrefilter(function (options) {
+        if (options.crossDomain && jQuery.support.cors) {
+          options.url = "https://cors-anywhere.herokuapp.com/" + options.url;
+        }
+      });
+    </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#sidebar").load("sidebar.html");
+      });
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="shortcut icon"
+      href="./images/navigation/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Jane Zweibel Studio</title>
+  </head>
+
+  <body>
+  <!-- Main Content -->
+    <main class="main">
+    <!-- Header -->
+      <header id="header" class="header"></header>
+        <!-- Content -->
+      <div>
+        <div class="findme">
+          <h1 class="">FIND MY WORK</h1>
+          <!-- <div class="">
+            <a href="https://www.etsy.com/shop/JaneZweibelArt">
+              <img class="etsylogo" src="images/navigation/etsy logo.png"/>
+            </a>
+            <a href="https://www.instagram.com/janiejanez/">
+              <img class="instagramlogo" src="images/navigation/instagram logo.png"/>
+            </a>
+            <p><a href="https://www.philadelphiaindependents.com/">Philadelphia Independents</a></p>
+            <p>35 N. 3rd Street, Philadelphia, PA 19106</p>
+          </div> -->
+        </div>
+      </div>
+        <div id="linktree-container">
+          <div class="linktree-box">
+            <div class="linktree">
+              <div class="linktree-item"><a href="https://janezweibel.studio/2021.html">Recent Paintings</a></div>
+              <div class="linktree-item"><a href="https://www.etsy.com/shop/JaneZweibelArt">Etsy Shop</a></div>
+              <div class="linktree-item"><a href="https://www.instagram.com/janiejanez/">Instagram</a></div>
+              <div class="linktree-item"><a href="https://www.philadelphiaindependents.com/">Philadelphia Independents</a></div>
+            </div>
+          </div>
+        </div>
+      <!-- Footer -->
+      <!-- <footer id="footer" class="footer"></footer> -->
+    </main>
+  </body>
+</html>
