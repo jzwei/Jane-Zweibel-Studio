@@ -698,7 +698,7 @@ p.flex-item {
 .linktree-box {
   background-color: white;
   max-width: 80%;
-  height: 400px;
+  height: 430px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -714,7 +714,7 @@ p.flex-item {
   justify-content: space-between;
   width: 84%;
   margin: 0 auto;
-  height: 351px;
+  height: 388px;
 }
 
 .linktree-photo img {
